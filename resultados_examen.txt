@@ -1,0 +1,591 @@
+run('examen_alf.mlx')
+Velocidad lineal obtenida mediante el Jacobiano lineal del Eslabón 6
+[[cos(th1(t)) sin(th2(t)) d3p(t) - th5p(t) (l5 cos(th1(t)) cos(th5(t)) sin(th2(t)) + l5 sin(th1(t)) sin(th4(t)) sin(th5(t)) - l5 cos(th1(t)) cos(th2(t)) cos(th4(t)) sin(th5(t)))
+
+   - th1p(t) (sin(th1(t)) (#4 + #3 + #2) + l5 cos(th5(t)) (cos(th1(t)) sin(th4(t)) + cos(th2(t)) cos(th4(t)) sin(th1(t))) + l5 sin(th1(t)) sin(th2(t)) sin(th5(t)))
+
+   + cos(th1(t)) th2p(t) #1 - l5 cos(th5(t)) th4p(t) (cos(th4(t)) sin(th1(t)) + cos(th1(t)) cos(th2(t)) sin(th4(t)))],
+
+  [th1p(t) (cos(th1(t)) (#4 + #3 + #2) - l5 cos(th5(t)) (sin(th1(t)) sin(th4(t)) - cos(th1(t)) cos(th2(t)) cos(th4(t))) + l5 cos(th1(t)) sin(th2(t)) sin(th5(t)))
+
+   + th5p(t) (l5 cos(th1(t)) sin(th4(t)) sin(th5(t)) - l5 cos(th5(t)) sin(th1(t)) sin(th2(t)) + l5 cos(th2(t)) cos(th4(t)) sin(th1(t)) sin(th5(t))) + sin(th1(t)) sin(th2(t)) d3p(t) + sin(th1(t)) th2p(t) #1
+
+   + l5 cos(th5(t)) th4p(t) (cos(th1(t)) cos(th4(t)) - cos(th2(t)) sin(th1(t)) sin(th4(t)))],
+
+  [cos(th2(t)) d3p(t) - th2p(t) (#4 + #3 + #2 + l5 sin(th2(t)) sin(th5(t)) + l5 cos(th2(t)) cos(th4(t)) cos(th5(t))) - l5 th5p(t) (cos(th2(t)) cos(th5(t)) + cos(th4(t)) sin(th2(t)) sin(th5(t))) + l5 cos(th5(t)) sin(th2(t)) sin(th4(t)) th4p(t)]]
+
+where
+
+   #1 == l4 cos(th2(t)) + l2 sin(th2(t)) + cos(th2(t)) d3(t) + l5 cos(th2(t)) sin(th5(t)) - l5 cos(th4(t)) cos(th5(t)) sin(th2(t))
+
+   #2 == sin(th2(t)) d3(t)
+
+   #3 == l4 sin(th2(t))
+
+   #4 == l2 cos(th2(t))
+
+
+Velocidad angular obtenida mediante el Jacobiano angular del Eslabón 6
+/ cos(th1(t)) sin(th2(t)) th4p(t) - th6p(t) (sin(th5(t)) (sin(th1(t)) sin(th4(t)) - cos(th1(t)) cos(th2(t)) cos(th4(t))) - cos(th1(t)) cos(th5(t)) sin(th2(t))) - sin(th1(t)) th2p(t) - th5p(t) (cos(th4(t)) sin(th1(t)) + cos(th1(t)) cos(th2(t)) sin(th4(t))) \
+|                                                                                                                                                                                                                                                               |
+| th5p(t) (cos(th1(t)) cos(th4(t)) - cos(th2(t)) sin(th1(t)) sin(th4(t))) + th6p(t) (sin(th5(t)) (cos(th1(t)) sin(th4(t)) + cos(th2(t)) cos(th4(t)) sin(th1(t))) + cos(th5(t)) sin(th1(t)) sin(th2(t))) + cos(th1(t)) th2p(t) + sin(th1(t)) sin(th2(t)) th4p(t) |
+|                                                                                                                                                                                                                                                               |
+\                                                           th1p(t) + th6p(t) (cos(th2(t)) cos(th5(t)) - cos(th4(t)) sin(th2(t)) sin(th5(t))) + cos(th2(t)) th4p(t) + sin(th2(t)) sin(th4(t)) th5p(t)                                                           /
+
+Velocidad lineal obtenida mediante el Jacobiano lineal del Eslabón 5
+[[cos(th1(t)) sin(th2(t)) d3p(t) - th5p(t) (l5 cos(th1(t)) cos(th5(t)) sin(th2(t)) + l5 sin(th1(t)) sin(th4(t)) sin(th5(t)) - l5 cos(th1(t)) cos(th2(t)) cos(th4(t)) sin(th5(t)))
+
+   - th1p(t) (sin(th1(t)) (#4 + #3 + #2) + l5 cos(th5(t)) (cos(th1(t)) sin(th4(t)) + cos(th2(t)) cos(th4(t)) sin(th1(t))) + l5 sin(th1(t)) sin(th2(t)) sin(th5(t)))
+
+   + cos(th1(t)) th2p(t) #1 - l5 cos(th5(t)) th4p(t) (cos(th4(t)) sin(th1(t)) + cos(th1(t)) cos(th2(t)) sin(th4(t)))],
+
+  [th1p(t) (cos(th1(t)) (#4 + #3 + #2) - l5 cos(th5(t)) (sin(th1(t)) sin(th4(t)) - cos(th1(t)) cos(th2(t)) cos(th4(t))) + l5 cos(th1(t)) sin(th2(t)) sin(th5(t)))
+
+   + th5p(t) (l5 cos(th1(t)) sin(th4(t)) sin(th5(t)) - l5 cos(th5(t)) sin(th1(t)) sin(th2(t)) + l5 cos(th2(t)) cos(th4(t)) sin(th1(t)) sin(th5(t))) + sin(th1(t)) sin(th2(t)) d3p(t) + sin(th1(t)) th2p(t) #1
+
+   + l5 cos(th5(t)) th4p(t) (cos(th1(t)) cos(th4(t)) - cos(th2(t)) sin(th1(t)) sin(th4(t)))],
+
+  [cos(th2(t)) d3p(t) - th2p(t) (#4 + #3 + #2 + l5 sin(th2(t)) sin(th5(t)) + l5 cos(th2(t)) cos(th4(t)) cos(th5(t))) - l5 th5p(t) (cos(th2(t)) cos(th5(t)) + cos(th4(t)) sin(th2(t)) sin(th5(t))) + l5 cos(th5(t)) sin(th2(t)) sin(th4(t)) th4p(t)]]
+
+where
+
+   #1 == l4 cos(th2(t)) + l2 sin(th2(t)) + cos(th2(t)) d3(t) + l5 cos(th2(t)) sin(th5(t)) - l5 cos(th4(t)) cos(th5(t)) sin(th2(t))
+
+   #2 == sin(th2(t)) d3(t)
+
+   #3 == l4 sin(th2(t))
+
+   #4 == l2 cos(th2(t))
+
+
+Velocidad angular obtenida mediante el Jacobiano angular del Eslabón 5
+/ cos(th1(t)) sin(th2(t)) th4p(t) - sin(th1(t)) th2p(t) - th5p(t) (cos(th4(t)) sin(th1(t)) + cos(th1(t)) cos(th2(t)) sin(th4(t))) \
+|                                                                                                                                 |
+| th5p(t) (cos(th1(t)) cos(th4(t)) - cos(th2(t)) sin(th1(t)) sin(th4(t))) + cos(th1(t)) th2p(t) + sin(th1(t)) sin(th2(t)) th4p(t) |
+|                                                                                                                                 |
+\                                 th1p(t) + cos(th2(t)) th4p(t) + sin(th2(t)) sin(th4(t)) th5p(t)                                 /
+
+Velocidad lineal obtenida mediante el Jacobiano lineal del Eslabón 4
+/ cos(th1(t)) th2p(t) #2 - sin(th1(t)) th1p(t) #1 + cos(th1(t)) sin(th2(t)) d3p(t) \
+|                                                                                  |
+| cos(th1(t)) th1p(t) #1 + sin(th1(t)) th2p(t) #2 + sin(th1(t)) sin(th2(t)) d3p(t) |
+|                                                                                  |
+\                          cos(th2(t)) d3p(t) - th2p(t) #1                         /
+
+where
+
+   #1 == l2 cos(th2(t)) + l4 sin(th2(t)) + sin(th2(t)) d3(t)
+
+   #2 == l4 cos(th2(t)) + l2 sin(th2(t)) + cos(th2(t)) d3(t)
+
+
+Velocidad angular obtenida mediante el Jacobiano angular del Eslabón 4
+/ cos(th1(t)) sin(th2(t)) th4p(t) - sin(th1(t)) th2p(t) \
+|                                                       |
+| cos(th1(t)) th2p(t) + sin(th1(t)) sin(th2(t)) th4p(t) |
+|                                                       |
+\             th1p(t) + cos(th2(t)) th4p(t)             /
+
+Velocidad lineal obtenida mediante el Jacobiano lineal del Eslabón 3
+/ cos(th1(t)) th2p(t) #2 - sin(th1(t)) th1p(t) #1 + cos(th1(t)) sin(th2(t)) d3p(t) \
+|                                                                                  |
+| cos(th1(t)) th1p(t) #1 + sin(th1(t)) th2p(t) #2 + sin(th1(t)) sin(th2(t)) d3p(t) |
+|                                                                                  |
+\                          cos(th2(t)) d3p(t) - th2p(t) #1                         /
+
+where
+
+   #1 == l2 cos(th2(t)) + sin(th2(t)) d3(t)
+
+   #2 == l2 sin(th2(t)) + cos(th2(t)) d3(t)
+
+
+Velocidad angular obtenida mediante el Jacobiano angular del Eslabón 3
+/ -sin(th1(t)) th2p(t) \
+|                      |
+|  cos(th1(t)) th2p(t) |
+|                      |
+\        th1p(t)       /
+
+Velocidad lineal obtenida mediante el Jacobiano lineal del Eslabón 2
+/ l2 cos(th1(t)) sin(th2(t)) th2p(t) - l2 cos(th2(t)) sin(th1(t)) th1p(t) \
+|                                                                         |
+| l2 cos(th1(t)) cos(th2(t)) th1p(t) + l2 sin(th1(t)) sin(th2(t)) th2p(t) |
+|                                                                         |
+\                         -l2 cos(th2(t)) th2p(t)                         /
+
+Velocidad angular obtenida mediante el Jacobiano angular del Eslabón 2
+/ -sin(th1(t)) th2p(t) \
+|                      |
+|  cos(th1(t)) th2p(t) |
+|                      |
+\        th1p(t)       /
+
+Velocidad lineal obtenida mediante el Jacobiano lineal del Eslabón 1
+/ 0 \
+|   |
+| 0 |
+|   |
+\ 0 /
+
+Velocidad angular obtenida mediante el Jacobiano angular del Eslabón 1
+/    0    \
+|         |
+|    0    |
+|         |
+\ th1p(t) /
+
+Energía cinética total calculada
+Energía potencial del sistema
+ 
+U_Total =
+ 
+g*(l1*m2 + l1*m3 + l1*m4 + l1*m5 + l1*m6 + lc1*m1 + l4*m5*cos(th2(t)) + l4*m6*cos(th2(t)) + lc4*m4*cos(th2(t)) + l2*m3*sin(th2(t)) + l2*m4*sin(th2(t)) + l2*m5*sin(th2(t)) + l2*m6*sin(th2(t)) + lc2*m2*sin(th2(t)) + m3*cos(th2(t))*d3(t) + m4*cos(th2(t))*d3(t) + m5*cos(th2(t))*d3(t) + m6*cos(th2(t))*d3(t) + l5*m6*cos(th2(t))*sin(th5(t)) + lc5*m5*cos(th2(t))*sin(th5(t)) - l5*m6*cos(th4(t))*cos(th5(t))*sin(th2(t)) - lc5*m5*cos(th4(t))*cos(th5(t))*sin(th2(t)))
+ 
+Lagrangiano obtenido:
+         2            2            2               2               2               2               2               2               2               2               2               2               2               2               2               2               2
+m4 d3p(t)    m5 d3p(t)    m6 d3p(t)    Ixx2 th1p(t)    Ixx3 th1p(t)    Ixx4 th2p(t)    Ixx6 th1p(t)    Ixx5 th4p(t)    Ixx6 th5p(t)    Iyy1 th1p(t)    Iyy2 th2p(t)    Iyy3 th2p(t)    Iyy5 th1p(t)    Iyy4 th4p(t)    Iyy5 th5p(t)    Iyy6 th4p(t)    Izz4 th1p(t)
+---------- + ---------- + ---------- + ------------- + ------------- + ------------- + ------------- + ------------- + ------------- + ------------- + ------------- + ------------- + ------------- + ------------- + ------------- + ------------- + -------------
+     2            2            2             2               2               2               2               2               2               2               2               2               2               2               2               2               2
+
+                 2               2               2           2        2           2        2           2        2           2        2           2        2           2        2           2        2           2        2                  2                  2
+     Izz5 th2p(t)    Izz6 th2p(t)    Izz6 th6p(t)    m3 d3(t)  th1p(t)    m3 d3(t)  th2p(t)    m4 d3(t)  th1p(t)    m4 d3(t)  th2p(t)    m5 d3(t)  th1p(t)    m5 d3(t)  th2p(t)    m6 d3(t)  th1p(t)    m6 d3(t)  th2p(t)    Ixx2 #1 th1p(t)    Ixx3 #1 th1p(t)
+   + ------------- + ------------- + ------------- + ------------------ + ------------------ + ------------------ + ------------------ + ------------------ + ------------------ + ------------------ + ------------------ - ---------------- - ----------------
+           2               2               2                  2                    2                    2                    2                    2                    2                    2                    2                   2                  2
+
+                    2                  2                  2                  2                  2                  2                  2                  2                  2                  2                  2                  2                  2
+     Ixx5 #1 th1p(t)    Ixx4 #3 th1p(t)    Ixx6 #1 th1p(t)    Ixx4 #3 th2p(t)    Ixx6 #3 th1p(t)    Ixx5 #2 th2p(t)    Ixx6 #3 th2p(t)    Ixx6 #4 th1p(t)    Ixx5 #2 th4p(t)    Ixx6 #4 th4p(t)    Ixx6 #4 th5p(t)    Iyy4 #1 th1p(t)    Iyy5 #1 th1p(t)
+   + ---------------- + ---------------- - ---------------- - ---------------- - ---------------- + ---------------- + ---------------- - ---------------- - ---------------- + ---------------- - ---------------- + ---------------- - ----------------
+             2                  2                  2                  2                  2                  2                  2                  2                  2                  2                  2                  2                  2
+
+                    2                  2                  2                  2                  2                  2                  2                  2                  2                  2                  2                  2                  2
+     Iyy6 #1 th1p(t)    Iyy5 #3 th1p(t)    Iyy5 #3 th2p(t)    Iyy6 #2 th2p(t)    Iyy6 #4 th1p(t)    Iyy6 #2 th4p(t)    Iyy6 #4 th4p(t)    Iyy6 #4 th5p(t)    Izz2 #1 th1p(t)    Izz3 #1 th1p(t)    Izz4 #1 th1p(t)    Izz4 #3 th1p(t)    Izz4 #3 th2p(t)
+   + ---------------- - ---------------- + ---------------- + ---------------- + ---------------- - ---------------- - ---------------- + ---------------- + ---------------- + ---------------- - ---------------- - ---------------- + ----------------
+             2                  2                  2                  2                  2                  2                  2                  2                  2                  2                  2                  2                  2
+
+                    2                  2                  2                  2                  2                  2                  2                  2                                                                  2           2     2           2
+     Izz5 #3 th1p(t)    Izz5 #3 th2p(t)    Izz6 #3 th1p(t)    Izz5 #2 th2p(t)    Izz6 #3 th2p(t)    Izz6 #2 th2p(t)    Izz5 #2 th4p(t)    Izz6 #2 th4p(t)                                                                 l2  m3 th2p(t)    l2  m4 th2p(t)
+   + ---------------- - ---------------- + ---------------- - ---------------- - ---------------- - ---------------- + ---------------- + ---------------- - g l1 m2 - g l1 m3 - g l1 m4 - g l1 m5 - g l1 m6 - g lc1 m1 + --------------- + ---------------
+             2                  2                  2                  2                  2                  2                  2                  2                                                                              2                 2
+
+       2           2     2           2     2           2     2           2     2           2     2           2     2           2     2           2     2           2      2           2      2           2      2           2      2           2      2           2
+     l2  m5 th2p(t)    l2  m6 th2p(t)    l4  m5 th1p(t)    l4  m5 th2p(t)    l4  m6 th1p(t)    l4  m6 th2p(t)    l5  m6 th1p(t)    l5  m6 th2p(t)    l5  m6 th5p(t)    lc2  m2 th2p(t)    lc4  m4 th1p(t)    lc4  m4 th2p(t)    lc5  m5 th1p(t)    lc5  m5 th2p(t)
+   + --------------- + --------------- + --------------- + --------------- + --------------- + --------------- + --------------- + --------------- + --------------- + ---------------- + ---------------- + ---------------- + ---------------- + ----------------
+            2                 2                 2                 2                 2                 2                 2                 2                 2                  2                  2                  2                  2                  2
+
+        2           2                     2                     2                     2                     2                                           2                     2                     2                     2                     2
+     lc5  m5 th5p(t)    Ixx4 #1 #3 th1p(t)    Ixx5 #1 #2 th1p(t)    Ixx6 #1 #3 th1p(t)    Ixx5 #3 #2 th1p(t)                      2   Ixx5 #3 #2 th2p(t)    Ixx6 #3 #4 th1p(t)    Ixx6 #3 #4 th2p(t)    Ixx6 #2 #4 th2p(t)    Ixx6 #2 #4 th4p(t)
+   + ---------------- - ------------------- - ------------------- + ------------------- + ------------------- + Ixx6 #1 #4 th1p(t)  - ------------------- + ------------------- - ------------------- + ------------------- - -------------------
+             2                   2                     2                     2                     2                                           2                     2                     2                     2                     2
+
+                       2                     2                                           2                     2                     2                     2                     2                     2                     2                     2
+     Iyy5 #1 #3 th1p(t)    Iyy6 #1 #2 th1p(t)                      2   Iyy6 #3 #2 th1p(t)    Iyy6 #3 #2 th2p(t)    Iyy6 #3 #4 th1p(t)    Iyy6 #3 #4 th2p(t)    Iyy6 #2 #4 th2p(t)    Iyy6 #2 #4 th4p(t)    Izz4 #1 #3 th1p(t)    Izz5 #1 #3 th1p(t)
+   + ------------------- - ------------------- - Iyy6 #1 #4 th1p(t)  + ------------------- - ------------------- - ------------------- + ------------------- - ------------------- + ------------------- + ------------------- - -------------------
+              2                     2                                           2                     2                     2                     2                     2                     2                     2                     2
+
+                       2                     2                     2                     2                     2                     2                     2
+     Izz5 #1 #2 th1p(t)    Izz6 #1 #3 th1p(t)    Izz6 #1 #2 th1p(t)    Izz5 #3 #2 th1p(t)    Izz5 #3 #2 th2p(t)    Izz6 #3 #2 th1p(t)    Izz6 #3 #2 th2p(t)
+   + ------------------- - ------------------- + ------------------- - ------------------- + ------------------- - ------------------- + ------------------- - g m3 cos(th2(t)) d3(t) - g m4 cos(th2(t)) d3(t) - g m5 cos(th2(t)) d3(t) - g m6 cos(th2(t)) d3(t) + l4
+              2                     2                     2                     2                     2                     2                     2
+
+                                                                                                                                              2              2     2              2     2              2     2              2     2              2
+                   2                      2                      2                      2                       2                       2   l2  m3 #1 th1p(t)    l2  m4 #1 th1p(t)    l2  m5 #1 th1p(t)    l2  m6 #1 th1p(t)    l4  m5 #1 th1p(t)
+   m5 d3(t) th1p(t)  + l4 m5 d3(t) th2p(t)  + l4 m6 d3(t) th1p(t)  + l4 m6 d3(t) th2p(t)  + lc4 m4 d3(t) th1p(t)  + lc4 m4 d3(t) th2p(t)  + ------------------ + ------------------ + ------------------ + ------------------ - ------------------
+                                                                                                                                                     2                    2                    2                    2                    2
+
+       2              2     2              2     2              2     2              2      2              2      2              2      2              2      2              2      2              2
+     l4  m6 #1 th1p(t)    l5  m6 #1 th1p(t)    l5  m6 #2 th2p(t)    l5  m6 #2 th4p(t)    lc2  m2 #1 th1p(t)    lc4  m4 #1 th1p(t)    lc5  m5 #1 th1p(t)    lc5  m5 #2 th2p(t)    lc5  m5 #2 th4p(t)
+   - ------------------ - ------------------ - ------------------ + ------------------ + ------------------- - ------------------- - ------------------- - ------------------- + -------------------
+              2                    2                    2                    2                    2                     2                     2                     2                     2
+
+   + Ixx5 cos(th2(t)) th1p(t) th4p(t) + Ixx6 cos(th4(t)) th2p(t) th5p(t) + Iyy4 cos(th2(t)) th1p(t) th4p(t) + Iyy6 cos(th2(t)) th1p(t) th4p(t) + Iyy5 cos(th4(t)) th2p(t) th5p(t) + Izz6 cos(th5(t)) th4p(t) th6p(t) - g l4 m5 cos(th2(t)) - g l4 m6 cos(th2(t)) - g
+
+                                   2        2              2        2              2        2              2        2
+                        m3 #1 d3(t)  th1p(t)    m4 #1 d3(t)  th1p(t)    m5 #1 d3(t)  th1p(t)    m6 #1 d3(t)  th1p(t)
+   lc4 m4 cos(th2(t)) - --------------------- - --------------------- - --------------------- - --------------------- + l2 m4 d3p(t) th2p(t) + l2 m5 d3p(t) th2p(t) + l2 m6 d3p(t) th2p(t) - g l2 m3 sin(th2(t)) - g l2 m4 sin(th2(t)) - g l2 m5 sin(th2(t)) - g l2
+                                  2                       2                       2                       2
+
+                                                                                                                                                                                               2                                                   2
+                                                                 2                         2                          2                                                  l2 m3 #5 d3(t) th1p(t)                          2   l2 m4 #5 d3(t) th1p(t)
+   m6 sin(th2(t)) - g lc2 m2 sin(th2(t)) - l4 m5 #1 d3(t) th1p(t)  - l4 m6 #1 d3(t) th1p(t)  - lc4 m4 #1 d3(t) th1p(t)  + Izz6 cos(th2(t)) cos(th5(t)) th1p(t) th6p(t) + ----------------------- + l2 m3 #5 d3(t) th2p(t)  + -----------------------
+                                                                                                                                                                                    2                                                   2
+
+                                                     2                                                   2
+                           2   l2 m5 #5 d3(t) th1p(t)                          2   l2 m6 #5 d3(t) th1p(t)                          2
+   + l2 m4 #5 d3(t) th2p(t)  + ----------------------- + l2 m5 #5 d3(t) th2p(t)  + ----------------------- + l2 m6 #5 d3(t) th2p(t)  + Ixx6 sin(th2(t)) sin(th4(t)) th1p(t) th5p(t) + Iyy5 sin(th2(t)) sin(th4(t)) th1p(t) th5p(t) + Izz6
+                                          2                                                   2
+
+                                               2                 2     2                 2     2                 2      2                 2      2                 2      2                 2
+                                             l5  m6 #1 #2 th1p(t)    l5  m6 #3 #2 th1p(t)    l5  m6 #3 #2 th2p(t)    lc5  m5 #1 #2 th1p(t)    lc5  m5 #3 #2 th1p(t)    lc5  m5 #3 #2 th2p(t)
+   sin(th4(t)) sin(th5(t)) th2p(t) th6p(t) + --------------------- - --------------------- + --------------------- + ---------------------- - ---------------------- + ----------------------
+                                                       2                       2                       2                        2                        2                        2
+
+                                                                                                                                                                             2                               2                                2
+   - l5 m6 cos(th5(t)) d3p(t) th5p(t) - lc5 m5 cos(th5(t)) d3p(t) th5p(t) - g l5 m6 cos(th2(t)) sin(th5(t)) - g lc5 m5 cos(th2(t)) sin(th5(t)) + l4 l5 m6 sin(th5(t)) th1p(t)  + l4 l5 m6 sin(th5(t)) th2p(t)  + l4 lc5 m5 sin(th5(t)) th1p(t)
+
+                                  2
+   + l4 lc5 m5 sin(th5(t)) th2p(t)  - Ixx5 cos(th2(t)) #2 th1p(t) th4p(t) + Ixx6 cos(th2(t)) #4 th1p(t) th4p(t) - Ixx6 cos(th4(t)) #4 th2p(t) th5p(t) - Iyy6 cos(th2(t)) #2 th1p(t) th4p(t) - Iyy6 cos(th2(t)) #4 th1p(t) th4p(t) + Iyy6 cos(th4(t)) #4
+
+                                                                                                                                                                                                        2                                             2
+                                                                                                                                                                                     l2 l4 m5 #5 th1p(t)                       2   l2 l4 m6 #5 th1p(t)
+   th2p(t) th5p(t) + Izz5 cos(th2(t)) #2 th1p(t) th4p(t) + Izz6 cos(th2(t)) #2 th1p(t) th4p(t) - 2 l2 m4 #1 d3p(t) th2p(t) - 2 l2 m5 #1 d3p(t) th2p(t) - 2 l2 m6 #1 d3p(t) th2p(t) + -------------------- + l2 l4 m5 #5 th2p(t)  + --------------------
+                                                                                                                                                                                               2                                             2
+
+                                                2
+                        2   l2 lc4 m4 #5 th1p(t)                        2                                  2                                  2                                   2                                   2
+   + l2 l4 m6 #5 th2p(t)  + --------------------- + l2 lc4 m4 #5 th2p(t)  + l5 m6 sin(th5(t)) d3(t) th1p(t)  + l5 m6 sin(th5(t)) d3(t) th2p(t)  + lc5 m5 sin(th5(t)) d3(t) th1p(t)  + lc5 m5 sin(th5(t)) d3(t) th2p(t)
+                                      2
+
+                                                                                                     2                        2                        2                        2                        2                        2                        2
+       2                                     2                                  Ixx5 #1 #3 #2 th1p(t)    Ixx6 #1 #3 #4 th1p(t)    Ixx6 #1 #2 #4 th1p(t)    Ixx6 #3 #2 #4 th1p(t)    Ixx6 #3 #2 #4 th2p(t)    Iyy6 #1 #3 #2 th1p(t)    Iyy6 #1 #3 #4 th1p(t)
+   + l5  m6 cos(th4(t)) th2p(t) th5p(t) + lc5  m5 cos(th4(t)) th2p(t) th5p(t) - ---------------------- - ---------------------- - ---------------------- + ---------------------- - ---------------------- - ---------------------- + ----------------------
+                                                                                           2                        2                        2                        2                        2                        2                        2
+
+                          2                        2                        2                        2                        2
+     Iyy6 #1 #2 #4 th1p(t)    Iyy6 #3 #2 #4 th1p(t)    Iyy6 #3 #2 #4 th2p(t)    Izz5 #1 #3 #2 th1p(t)    Izz6 #1 #3 #2 th1p(t)                                                                                        2
+   + ---------------------- - ---------------------- + ---------------------- + ---------------------- + ---------------------- - Ixx6 cos(th2(t)) #2 #4 th1p(t) th4p(t) + Iyy6 cos(th2(t)) #2 #4 th1p(t) th4p(t) + l5  m6
+                2                        2                        2                        2                        2
+
+                                                2                                                                                2                                      2     2                                        2
+   sin(th2(t)) sin(th4(t)) th1p(t) th5p(t) + lc5  m5 sin(th2(t)) sin(th4(t)) th1p(t) th5p(t) - l5 m6 #1 sin(th5(t)) d3(t) th1p(t)  - lc5 m5 #1 sin(th5(t)) d3(t) th1p(t)  + l5  m6 cos(th2(t)) #2 th1p(t) th4p(t) + lc5  m5 cos(th2(t)) #2 th1p(t) th4p(t) - Ixx4
+
+   cos(th4(t)) sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) + Ixx6 cos(th4(t)) sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) - Ixx5 cos(th5(t)) sin(th4(t)) sin(th5(t)) th2p(t) th4p(t) - Ixx6 cos(th6(t)) sin(th5(t)) sin(th6(t)) th4p(t) th5p(t) + Iyy5
+
+   cos(th4(t)) sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) - Iyy6 cos(th5(t)) sin(th4(t)) sin(th5(t)) th2p(t) th4p(t) + Iyy6 cos(th6(t)) sin(th5(t)) sin(th6(t)) th4p(t) th5p(t) + Izz4 cos(th4(t)) sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) - Izz5
+
+   cos(th4(t)) sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) - Izz6 cos(th4(t)) sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) - Izz6 cos(th4(t)) sin(th2(t)) sin(th5(t)) th1p(t) th6p(t) + Izz5 cos(th5(t)) sin(th4(t)) sin(th5(t)) th2p(t) th4p(t) + Izz6
+
+                                                                                                 2                                            2
+   cos(th5(t)) sin(th4(t)) sin(th5(t)) th2p(t) th4p(t) - l2 l5 m6 cos(th4(t)) cos(th5(t)) th2p(t)  - l2 lc5 m5 cos(th4(t)) cos(th5(t)) th2p(t)  - l5 m6 cos(th4(t)) cos(th5(t)) d3p(t) th2p(t) - lc5 m5 cos(th4(t)) cos(th5(t)) d3p(t) th2p(t) + g l5 m6
+
+                                                                                                                2                           2
+                                                                                        Ixx6 #1 #3 #2 #4 th1p(t)    Iyy6 #1 #3 #2 #4 th1p(t)
+   cos(th4(t)) cos(th5(t)) sin(th2(t)) + g lc5 m5 cos(th4(t)) cos(th5(t)) sin(th2(t)) - ------------------------- + ------------------------- - l2 l5 m6 cos(th5(t)) th2p(t) th5p(t) - l2 lc5 m5 cos(th5(t)) th2p(t) th5p(t) - Ixx6 #4
+                                                                                                    2                           2
+
+                                                                                                 2                    2      2                    2
+                                                                                               l5  m6 #1 #3 #2 th1p(t)    lc5  m5 #1 #3 #2 th1p(t)                                   2                                   2
+   sin(th2(t)) sin(th4(t)) th1p(t) th5p(t) + Iyy6 #4 sin(th2(t)) sin(th4(t)) th1p(t) th5p(t) + ------------------------ + ------------------------- - l4 l5 m6 #1 sin(th5(t)) th1p(t)  - l4 lc5 m5 #1 sin(th5(t)) th1p(t)
+                                                                                                           2                          2
+
+   - l4 l5 m6 cos(th5(t)) sin(th4(t)) th2p(t) th4p(t) + l4 l5 m6 cos(th4(t)) sin(th5(t)) th2p(t) th5p(t) - l4 lc5 m5 cos(th5(t)) sin(th4(t)) th2p(t) th4p(t) + l4 lc5 m5 cos(th4(t)) sin(th5(t)) th2p(t) th5p(t) - Ixx5 cos(th4(t)) #2
+
+   sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) - Ixx6 cos(th4(t)) #4 sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) - Ixx6 cos(th5(t)) #4 sin(th4(t)) sin(th5(t)) th2p(t) th4p(t) - Iyy6 cos(th4(t)) #2 sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) + Iyy6 cos(th4(t)) #4
+
+   sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) + Iyy6 cos(th5(t)) #4 sin(th4(t)) sin(th5(t)) th2p(t) th4p(t) + Izz5 cos(th4(t)) #2 sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) + Izz6 cos(th4(t)) #2 sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) + l2 l5 m6 #1
+
+                                  2                                                2                                               2                                                 2     2
+   cos(th4(t)) cos(th5(t)) th1p(t)  + 2 l2 l5 m6 #1 cos(th4(t)) cos(th5(t)) th2p(t)  + l2 lc5 m5 #1 cos(th4(t)) cos(th5(t)) th1p(t)  + 2 l2 lc5 m5 #1 cos(th4(t)) cos(th5(t)) th2p(t)  - l5  m6 cos(th5(t)) sin(th4(t)) sin(th5(t)) th2p(t) th4p(t) + 2 l2 l5 m6 #1
+
+                                    2
+   cos(th5(t)) th2p(t) th5p(t) - lc5  m5 cos(th5(t)) sin(th4(t)) sin(th5(t)) th2p(t) th4p(t) + 2 l2 lc5 m5 #1 cos(th5(t)) th2p(t) th5p(t) - l5 m6 cos(th5(t)) sin(th4(t)) d3(t) th2p(t) th4p(t) + l5 m6 cos(th4(t)) sin(th5(t)) d3(t) th2p(t) th5p(t) - lc5 m5
+
+                                                                                                                                                                                  2                                                                           2
+   cos(th5(t)) sin(th4(t)) d3(t) th2p(t) th4p(t) + lc5 m5 cos(th4(t)) sin(th5(t)) d3(t) th2p(t) th5p(t) + Ixx5 cos(th2(t)) cos(th4(t)) cos(th5(t)) sin(th2(t)) sin(th5(t)) th1p(t)  - Ixx6 cos(th4(t)) cos(th5(t)) cos(th6(t)) sin(th4(t)) sin(th6(t)) th1p(t)
+
+                                                                             2                                                                           2                                                                           2
+   + Ixx6 cos(th4(t)) cos(th5(t)) cos(th6(t)) sin(th4(t)) sin(th6(t)) th2p(t)  + Iyy6 cos(th2(t)) cos(th4(t)) cos(th5(t)) sin(th2(t)) sin(th5(t)) th1p(t)  + Iyy6 cos(th4(t)) cos(th5(t)) cos(th6(t)) sin(th4(t)) sin(th6(t)) th1p(t)
+
+                                                                             2                                                                           2                                                                           2
+   - Iyy6 cos(th4(t)) cos(th5(t)) cos(th6(t)) sin(th4(t)) sin(th6(t)) th2p(t)  - Izz5 cos(th2(t)) cos(th4(t)) cos(th5(t)) sin(th2(t)) sin(th5(t)) th1p(t)  - Izz6 cos(th2(t)) cos(th4(t)) cos(th5(t)) sin(th2(t)) sin(th5(t)) th1p(t)
+
+   - Ixx5 cos(th2(t)) cos(th5(t)) sin(th4(t)) sin(th5(t)) th1p(t) th2p(t) + Ixx5 cos(th4(t)) cos(th5(t)) sin(th2(t)) sin(th5(t)) th1p(t) th4p(t) + Ixx6 cos(th5(t)) cos(th6(t)) sin(th2(t)) sin(th6(t)) th1p(t) th2p(t) - Ixx6
+
+   cos(th2(t)) cos(th6(t)) sin(th5(t)) sin(th6(t)) th1p(t) th5p(t) - Ixx6 cos(th4(t)) cos(th6(t)) sin(th5(t)) sin(th6(t)) th2p(t) th4p(t) + Ixx6 cos(th5(t)) cos(th6(t)) sin(th4(t)) sin(th6(t)) th2p(t) th5p(t) - Iyy6
+
+   cos(th2(t)) cos(th5(t)) sin(th4(t)) sin(th5(t)) th1p(t) th2p(t) + Iyy6 cos(th4(t)) cos(th5(t)) sin(th2(t)) sin(th5(t)) th1p(t) th4p(t) - Iyy6 cos(th5(t)) cos(th6(t)) sin(th2(t)) sin(th6(t)) th1p(t) th2p(t) + Iyy6
+
+   cos(th2(t)) cos(th6(t)) sin(th5(t)) sin(th6(t)) th1p(t) th5p(t) + Iyy6 cos(th4(t)) cos(th6(t)) sin(th5(t)) sin(th6(t)) th2p(t) th4p(t) - Iyy6 cos(th5(t)) cos(th6(t)) sin(th4(t)) sin(th6(t)) th2p(t) th5p(t) + Izz5
+
+   cos(th2(t)) cos(th5(t)) sin(th4(t)) sin(th5(t)) th1p(t) th2p(t) + Izz6 cos(th2(t)) cos(th5(t)) sin(th4(t)) sin(th5(t)) th1p(t) th2p(t) - Izz5 cos(th4(t)) cos(th5(t)) sin(th2(t)) sin(th5(t)) th1p(t) th4p(t) - Izz6
+
+                                                                                                                         2                                                         2                                                        2
+   cos(th4(t)) cos(th5(t)) sin(th2(t)) sin(th5(t)) th1p(t) th4p(t) + l2 l5 m6 cos(th2(t)) sin(th2(t)) sin(th5(t)) th1p(t)  + 2 l2 l5 m6 cos(th2(t)) sin(th2(t)) sin(th5(t)) th2p(t)  + l2 lc5 m5 cos(th2(t)) sin(th2(t)) sin(th5(t)) th1p(t)
+
+                                                            2
+   + 2 l2 lc5 m5 cos(th2(t)) sin(th2(t)) sin(th5(t)) th2p(t)  - l5 m6 cos(th5(t)) sin(th2(t)) sin(th4(t)) d3p(t) th1p(t) - lc5 m5 cos(th5(t)) sin(th2(t)) sin(th4(t)) d3p(t) th1p(t) - Ixx6
+
+   cos(th2(t)) cos(th4(t)) cos(th6(t)) sin(th5(t)) sin(th6(t)) th1p(t) th2p(t) - Ixx6 cos(th4(t)) cos(th5(t)) cos(th6(t)) sin(th2(t)) sin(th6(t)) th1p(t) th5p(t) + Iyy6 cos(th2(t)) cos(th4(t)) cos(th6(t)) sin(th5(t)) sin(th6(t)) th1p(t) th2p(t) + Iyy6
+
+                                                                                   2                                                                2
+   cos(th4(t)) cos(th5(t)) cos(th6(t)) sin(th2(t)) sin(th6(t)) th1p(t) th5p(t) + l5  m6 cos(th4(t)) #2 sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) + lc5  m5 cos(th4(t)) #2 sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) + l4 l5 m6
+
+                                                          2                                                                    2
+   cos(th2(t)) cos(th4(t)) cos(th5(t)) sin(th2(t)) th1p(t)  + l4 lc5 m5 cos(th2(t)) cos(th4(t)) cos(th5(t)) sin(th2(t)) th1p(t)  - Ixx6 cos(th6(t)) sin(th2(t)) sin(th4(t)) sin(th5(t)) sin(th6(t)) th1p(t) th4p(t) + Iyy6
+
+                                                                                                                                                            2                                                                              2
+   cos(th6(t)) sin(th2(t)) sin(th4(t)) sin(th5(t)) sin(th6(t)) th1p(t) th4p(t) + Ixx6 cos(th2(t)) cos(th4(t)) cos(th5(t)) #4 sin(th2(t)) sin(th5(t)) th1p(t)  + Ixx6 #1 cos(th4(t)) cos(th5(t)) cos(th6(t)) sin(th4(t)) sin(th6(t)) th1p(t)
+
+                                                                                2                                                                              2
+   - Iyy6 cos(th2(t)) cos(th4(t)) cos(th5(t)) #4 sin(th2(t)) sin(th5(t)) th1p(t)  - Iyy6 #1 cos(th4(t)) cos(th5(t)) cos(th6(t)) sin(th4(t)) sin(th6(t)) th1p(t)  + l2 l5 m6 cos(th2(t)) cos(th4(t)) cos(th5(t)) th1p(t) th4p(t) + l2 lc5 m5
+
+   cos(th2(t)) cos(th4(t)) cos(th5(t)) th1p(t) th4p(t) - l4 l5 m6 cos(th2(t)) cos(th5(t)) sin(th4(t)) th1p(t) th2p(t) + l4 l5 m6 cos(th4(t)) cos(th5(t)) sin(th2(t)) th1p(t) th4p(t) - l4 lc5 m5 cos(th2(t)) cos(th5(t)) sin(th4(t)) th1p(t) th2p(t) + l4 lc5 m5
+
+   cos(th4(t)) cos(th5(t)) sin(th2(t)) th1p(t) th4p(t) - Ixx6 cos(th2(t)) cos(th5(t)) #4 sin(th4(t)) sin(th5(t)) th1p(t) th2p(t) - 2 Ixx6 #3 cos(th5(t)) cos(th6(t)) sin(th2(t)) sin(th6(t)) th1p(t) th2p(t) + Ixx6 cos(th4(t)) cos(th5(t)) #4
+
+   sin(th2(t)) sin(th5(t)) th1p(t) th4p(t) + Iyy6 cos(th2(t)) cos(th5(t)) #4 sin(th4(t)) sin(th5(t)) th1p(t) th2p(t) + 2 Iyy6 #3 cos(th5(t)) cos(th6(t)) sin(th2(t)) sin(th6(t)) th1p(t) th2p(t) - Iyy6 cos(th4(t)) cos(th5(t)) #4
+
+   sin(th2(t)) sin(th5(t)) th1p(t) th4p(t) - l2 l5 m6 cos(th5(t)) sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) + l2 l5 m6 cos(th2(t)) sin(th4(t)) sin(th5(t)) th1p(t) th5p(t) - l2 lc5 m5 cos(th5(t)) sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) + l2 lc5 m5
+
+                                                           2                                                                       2      2                                                                       2
+   cos(th2(t)) sin(th4(t)) sin(th5(t)) th1p(t) th5p(t) + l5  m6 cos(th2(t)) cos(th4(t)) cos(th5(t)) sin(th2(t)) sin(th5(t)) th1p(t)  + lc5  m5 cos(th2(t)) cos(th4(t)) cos(th5(t)) sin(th2(t)) sin(th5(t)) th1p(t)
+
+                                                                                                                                                                                                       2
+   + l4 l5 m6 sin(th2(t)) sin(th4(t)) sin(th5(t)) th1p(t) th5p(t) + l4 lc5 m5 sin(th2(t)) sin(th4(t)) sin(th5(t)) th1p(t) th5p(t) + l5 m6 cos(th2(t)) cos(th4(t)) cos(th5(t)) sin(th2(t)) d3(t) th1p(t)
+
+                                                                         2     2                                                                        2                                                                         2
+   + lc5 m5 cos(th2(t)) cos(th4(t)) cos(th5(t)) sin(th2(t)) d3(t) th1p(t)  - l5  m6 cos(th2(t)) cos(th5(t)) sin(th4(t)) sin(th5(t)) th1p(t) th2p(t) + l5  m6 cos(th4(t)) cos(th5(t)) sin(th2(t)) sin(th5(t)) th1p(t) th4p(t) - lc5  m5
+
+                                                                        2
+   cos(th2(t)) cos(th5(t)) sin(th4(t)) sin(th5(t)) th1p(t) th2p(t) + lc5  m5 cos(th4(t)) cos(th5(t)) sin(th2(t)) sin(th5(t)) th1p(t) th4p(t) - Ixx6 cos(th4(t)) #2 #4 sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) + Iyy6 cos(th4(t)) #2 #4
+
+   sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) - l5 m6 cos(th2(t)) cos(th5(t)) sin(th4(t)) d3(t) th1p(t) th2p(t) + l5 m6 cos(th4(t)) cos(th5(t)) sin(th2(t)) d3(t) th1p(t) th4p(t) - lc5 m5 cos(th2(t)) cos(th5(t)) sin(th4(t)) d3(t) th1p(t) th2p(t) + lc5 m5
+
+   cos(th4(t)) cos(th5(t)) sin(th2(t)) d3(t) th1p(t) th4p(t) + l5 m6 sin(th2(t)) sin(th4(t)) sin(th5(t)) d3(t) th1p(t) th5p(t) + lc5 m5 sin(th2(t)) sin(th4(t)) sin(th5(t)) d3(t) th1p(t) th5p(t) - Ixx6
+
+                                                                                  2                                                                                       2
+   cos(th2(t)) cos(th6(t)) sin(th2(t)) sin(th4(t)) sin(th5(t)) sin(th6(t)) th1p(t)  + Iyy6 cos(th2(t)) cos(th6(t)) sin(th2(t)) sin(th4(t)) sin(th5(t)) sin(th6(t)) th1p(t)  - 2 l2 l5 m6 cos(th2(t)) cos(th5(t)) sin(th2(t)) sin(th4(t)) th2p(t) th4p(t) + 2 l2 l5 m6
+
+   cos(th2(t)) cos(th4(t)) sin(th2(t)) sin(th5(t)) th2p(t) th5p(t) - 2 l2 lc5 m5 cos(th2(t)) cos(th5(t)) sin(th2(t)) sin(th4(t)) th2p(t) th4p(t) + 2 l2 lc5 m5 cos(th2(t)) cos(th4(t)) sin(th2(t)) sin(th5(t)) th2p(t) th5p(t)
+
+where
+
+                    2
+   #1 == cos(th2(t))
+
+                    2
+   #2 == cos(th5(t))
+
+                    2
+   #3 == cos(th4(t))
+
+                    2
+   #4 == cos(th6(t))
+
+   #5 == sin(2 th2(t))
+
+
+Energía total del sistema (Hamiltoniano):
+         2            2            2               2               2               2               2               2               2               2               2               2               2               2               2               2               2
+m4 d3p(t)    m5 d3p(t)    m6 d3p(t)    Ixx2 th1p(t)    Ixx3 th1p(t)    Ixx4 th2p(t)    Ixx6 th1p(t)    Ixx5 th4p(t)    Ixx6 th5p(t)    Iyy1 th1p(t)    Iyy2 th2p(t)    Iyy3 th2p(t)    Iyy5 th1p(t)    Iyy4 th4p(t)    Iyy5 th5p(t)    Iyy6 th4p(t)    Izz4 th1p(t)
+---------- + ---------- + ---------- + ------------- + ------------- + ------------- + ------------- + ------------- + ------------- + ------------- + ------------- + ------------- + ------------- + ------------- + ------------- + ------------- + -------------
+     2            2            2             2               2               2               2               2               2               2               2               2               2               2               2               2               2
+
+                 2               2               2           2        2           2        2           2        2           2        2           2        2           2        2           2        2           2        2                  2                  2
+     Izz5 th2p(t)    Izz6 th2p(t)    Izz6 th6p(t)    m3 d3(t)  th1p(t)    m3 d3(t)  th2p(t)    m4 d3(t)  th1p(t)    m4 d3(t)  th2p(t)    m5 d3(t)  th1p(t)    m5 d3(t)  th2p(t)    m6 d3(t)  th1p(t)    m6 d3(t)  th2p(t)    Ixx2 #1 th1p(t)    Ixx3 #1 th1p(t)
+   + ------------- + ------------- + ------------- + ------------------ + ------------------ + ------------------ + ------------------ + ------------------ + ------------------ + ------------------ + ------------------ - ---------------- - ----------------
+           2               2               2                  2                    2                    2                    2                    2                    2                    2                    2                   2                  2
+
+                    2                  2                  2                  2                  2                  2                  2                  2                  2                  2                  2                  2                  2
+     Ixx5 #1 th1p(t)    Ixx4 #3 th1p(t)    Ixx6 #1 th1p(t)    Ixx4 #3 th2p(t)    Ixx6 #3 th1p(t)    Ixx5 #2 th2p(t)    Ixx6 #3 th2p(t)    Ixx6 #4 th1p(t)    Ixx5 #2 th4p(t)    Ixx6 #4 th4p(t)    Ixx6 #4 th5p(t)    Iyy4 #1 th1p(t)    Iyy5 #1 th1p(t)
+   + ---------------- + ---------------- - ---------------- - ---------------- - ---------------- + ---------------- + ---------------- - ---------------- - ---------------- + ---------------- - ---------------- + ---------------- - ----------------
+             2                  2                  2                  2                  2                  2                  2                  2                  2                  2                  2                  2                  2
+
+                    2                  2                  2                  2                  2                  2                  2                  2                  2                  2                  2                  2                  2
+     Iyy6 #1 th1p(t)    Iyy5 #3 th1p(t)    Iyy5 #3 th2p(t)    Iyy6 #2 th2p(t)    Iyy6 #4 th1p(t)    Iyy6 #2 th4p(t)    Iyy6 #4 th4p(t)    Iyy6 #4 th5p(t)    Izz2 #1 th1p(t)    Izz3 #1 th1p(t)    Izz4 #1 th1p(t)    Izz4 #3 th1p(t)    Izz4 #3 th2p(t)
+   + ---------------- - ---------------- + ---------------- + ---------------- + ---------------- - ---------------- - ---------------- + ---------------- + ---------------- + ---------------- - ---------------- - ---------------- + ----------------
+             2                  2                  2                  2                  2                  2                  2                  2                  2                  2                  2                  2                  2
+
+                    2                  2                  2                  2                  2                  2                  2                  2                                                                  2           2     2           2
+     Izz5 #3 th1p(t)    Izz5 #3 th2p(t)    Izz6 #3 th1p(t)    Izz5 #2 th2p(t)    Izz6 #3 th2p(t)    Izz6 #2 th2p(t)    Izz5 #2 th4p(t)    Izz6 #2 th4p(t)                                                                 l2  m3 th2p(t)    l2  m4 th2p(t)
+   + ---------------- - ---------------- + ---------------- - ---------------- - ---------------- - ---------------- + ---------------- + ---------------- + g l1 m2 + g l1 m3 + g l1 m4 + g l1 m5 + g l1 m6 + g lc1 m1 + --------------- + ---------------
+             2                  2                  2                  2                  2                  2                  2                  2                                                                              2                 2
+
+       2           2     2           2     2           2     2           2     2           2     2           2     2           2     2           2     2           2      2           2      2           2      2           2      2           2      2           2
+     l2  m5 th2p(t)    l2  m6 th2p(t)    l4  m5 th1p(t)    l4  m5 th2p(t)    l4  m6 th1p(t)    l4  m6 th2p(t)    l5  m6 th1p(t)    l5  m6 th2p(t)    l5  m6 th5p(t)    lc2  m2 th2p(t)    lc4  m4 th1p(t)    lc4  m4 th2p(t)    lc5  m5 th1p(t)    lc5  m5 th2p(t)
+   + --------------- + --------------- + --------------- + --------------- + --------------- + --------------- + --------------- + --------------- + --------------- + ---------------- + ---------------- + ---------------- + ---------------- + ----------------
+            2                 2                 2                 2                 2                 2                 2                 2                 2                  2                  2                  2                  2                  2
+
+        2           2                     2                     2                     2                     2                                           2                     2                     2                     2                     2
+     lc5  m5 th5p(t)    Ixx4 #1 #3 th1p(t)    Ixx5 #1 #2 th1p(t)    Ixx6 #1 #3 th1p(t)    Ixx5 #3 #2 th1p(t)                      2   Ixx5 #3 #2 th2p(t)    Ixx6 #3 #4 th1p(t)    Ixx6 #3 #4 th2p(t)    Ixx6 #2 #4 th2p(t)    Ixx6 #2 #4 th4p(t)
+   + ---------------- - ------------------- - ------------------- + ------------------- + ------------------- + Ixx6 #1 #4 th1p(t)  - ------------------- + ------------------- - ------------------- + ------------------- - -------------------
+             2                   2                     2                     2                     2                                           2                     2                     2                     2                     2
+
+                       2                     2                                           2                     2                     2                     2                     2                     2                     2                     2
+     Iyy5 #1 #3 th1p(t)    Iyy6 #1 #2 th1p(t)                      2   Iyy6 #3 #2 th1p(t)    Iyy6 #3 #2 th2p(t)    Iyy6 #3 #4 th1p(t)    Iyy6 #3 #4 th2p(t)    Iyy6 #2 #4 th2p(t)    Iyy6 #2 #4 th4p(t)    Izz4 #1 #3 th1p(t)    Izz5 #1 #3 th1p(t)
+   + ------------------- - ------------------- - Iyy6 #1 #4 th1p(t)  + ------------------- - ------------------- - ------------------- + ------------------- - ------------------- + ------------------- + ------------------- - -------------------
+              2                     2                                           2                     2                     2                     2                     2                     2                     2                     2
+
+                       2                     2                     2                     2                     2                     2                     2
+     Izz5 #1 #2 th1p(t)    Izz6 #1 #3 th1p(t)    Izz6 #1 #2 th1p(t)    Izz5 #3 #2 th1p(t)    Izz5 #3 #2 th2p(t)    Izz6 #3 #2 th1p(t)    Izz6 #3 #2 th2p(t)
+   + ------------------- - ------------------- + ------------------- - ------------------- + ------------------- - ------------------- + ------------------- + g m3 cos(th2(t)) d3(t) + g m4 cos(th2(t)) d3(t) + g m5 cos(th2(t)) d3(t) + g m6 cos(th2(t)) d3(t) + l4
+              2                     2                     2                     2                     2                     2                     2
+
+                                                                                                                                              2              2     2              2     2              2     2              2     2              2
+                   2                      2                      2                      2                       2                       2   l2  m3 #1 th1p(t)    l2  m4 #1 th1p(t)    l2  m5 #1 th1p(t)    l2  m6 #1 th1p(t)    l4  m5 #1 th1p(t)
+   m5 d3(t) th1p(t)  + l4 m5 d3(t) th2p(t)  + l4 m6 d3(t) th1p(t)  + l4 m6 d3(t) th2p(t)  + lc4 m4 d3(t) th1p(t)  + lc4 m4 d3(t) th2p(t)  + ------------------ + ------------------ + ------------------ + ------------------ - ------------------
+                                                                                                                                                     2                    2                    2                    2                    2
+
+       2              2     2              2     2              2     2              2      2              2      2              2      2              2      2              2      2              2
+     l4  m6 #1 th1p(t)    l5  m6 #1 th1p(t)    l5  m6 #2 th2p(t)    l5  m6 #2 th4p(t)    lc2  m2 #1 th1p(t)    lc4  m4 #1 th1p(t)    lc5  m5 #1 th1p(t)    lc5  m5 #2 th2p(t)    lc5  m5 #2 th4p(t)
+   - ------------------ - ------------------ - ------------------ + ------------------ + ------------------- - ------------------- - ------------------- - ------------------- + -------------------
+              2                    2                    2                    2                    2                     2                     2                     2                     2
+
+   + Ixx5 cos(th2(t)) th1p(t) th4p(t) + Ixx6 cos(th4(t)) th2p(t) th5p(t) + Iyy4 cos(th2(t)) th1p(t) th4p(t) + Iyy6 cos(th2(t)) th1p(t) th4p(t) + Iyy5 cos(th4(t)) th2p(t) th5p(t) + Izz6 cos(th5(t)) th4p(t) th6p(t) + g l4 m5 cos(th2(t)) + g l4 m6 cos(th2(t)) + g
+
+                                   2        2              2        2              2        2              2        2
+                        m3 #1 d3(t)  th1p(t)    m4 #1 d3(t)  th1p(t)    m5 #1 d3(t)  th1p(t)    m6 #1 d3(t)  th1p(t)
+   lc4 m4 cos(th2(t)) - --------------------- - --------------------- - --------------------- - --------------------- + l2 m4 d3p(t) th2p(t) + l2 m5 d3p(t) th2p(t) + l2 m6 d3p(t) th2p(t) + g l2 m3 sin(th2(t)) + g l2 m4 sin(th2(t)) + g l2 m5 sin(th2(t)) + g l2
+                                  2                       2                       2                       2
+
+                                                                                                                                                                                               2                                                   2
+                                                                 2                         2                          2                                                  l2 m3 #5 d3(t) th1p(t)                          2   l2 m4 #5 d3(t) th1p(t)
+   m6 sin(th2(t)) + g lc2 m2 sin(th2(t)) - l4 m5 #1 d3(t) th1p(t)  - l4 m6 #1 d3(t) th1p(t)  - lc4 m4 #1 d3(t) th1p(t)  + Izz6 cos(th2(t)) cos(th5(t)) th1p(t) th6p(t) + ----------------------- + l2 m3 #5 d3(t) th2p(t)  + -----------------------
+                                                                                                                                                                                    2                                                   2
+
+                                                     2                                                   2
+                           2   l2 m5 #5 d3(t) th1p(t)                          2   l2 m6 #5 d3(t) th1p(t)                          2
+   + l2 m4 #5 d3(t) th2p(t)  + ----------------------- + l2 m5 #5 d3(t) th2p(t)  + ----------------------- + l2 m6 #5 d3(t) th2p(t)  + Ixx6 sin(th2(t)) sin(th4(t)) th1p(t) th5p(t) + Iyy5 sin(th2(t)) sin(th4(t)) th1p(t) th5p(t) + Izz6
+                                          2                                                   2
+
+                                               2                 2     2                 2     2                 2      2                 2      2                 2      2                 2
+                                             l5  m6 #1 #2 th1p(t)    l5  m6 #3 #2 th1p(t)    l5  m6 #3 #2 th2p(t)    lc5  m5 #1 #2 th1p(t)    lc5  m5 #3 #2 th1p(t)    lc5  m5 #3 #2 th2p(t)
+   sin(th4(t)) sin(th5(t)) th2p(t) th6p(t) + --------------------- - --------------------- + --------------------- + ---------------------- - ---------------------- + ----------------------
+                                                       2                       2                       2                        2                        2                        2
+
+                                                                                                                                                                             2                               2                                2
+   - l5 m6 cos(th5(t)) d3p(t) th5p(t) - lc5 m5 cos(th5(t)) d3p(t) th5p(t) + g l5 m6 cos(th2(t)) sin(th5(t)) + g lc5 m5 cos(th2(t)) sin(th5(t)) + l4 l5 m6 sin(th5(t)) th1p(t)  + l4 l5 m6 sin(th5(t)) th2p(t)  + l4 lc5 m5 sin(th5(t)) th1p(t)
+
+                                  2
+   + l4 lc5 m5 sin(th5(t)) th2p(t)  - Ixx5 cos(th2(t)) #2 th1p(t) th4p(t) + Ixx6 cos(th2(t)) #4 th1p(t) th4p(t) - Ixx6 cos(th4(t)) #4 th2p(t) th5p(t) - Iyy6 cos(th2(t)) #2 th1p(t) th4p(t) - Iyy6 cos(th2(t)) #4 th1p(t) th4p(t) + Iyy6 cos(th4(t)) #4
+
+                                                                                                                                                                                                        2                                             2
+                                                                                                                                                                                     l2 l4 m5 #5 th1p(t)                       2   l2 l4 m6 #5 th1p(t)
+   th2p(t) th5p(t) + Izz5 cos(th2(t)) #2 th1p(t) th4p(t) + Izz6 cos(th2(t)) #2 th1p(t) th4p(t) - 2 l2 m4 #1 d3p(t) th2p(t) - 2 l2 m5 #1 d3p(t) th2p(t) - 2 l2 m6 #1 d3p(t) th2p(t) + -------------------- + l2 l4 m5 #5 th2p(t)  + --------------------
+                                                                                                                                                                                               2                                             2
+
+                                                2
+                        2   l2 lc4 m4 #5 th1p(t)                        2                                  2                                  2                                   2                                   2
+   + l2 l4 m6 #5 th2p(t)  + --------------------- + l2 lc4 m4 #5 th2p(t)  + l5 m6 sin(th5(t)) d3(t) th1p(t)  + l5 m6 sin(th5(t)) d3(t) th2p(t)  + lc5 m5 sin(th5(t)) d3(t) th1p(t)  + lc5 m5 sin(th5(t)) d3(t) th2p(t)
+                                      2
+
+                                                                                                     2                        2                        2                        2                        2                        2                        2
+       2                                     2                                  Ixx5 #1 #3 #2 th1p(t)    Ixx6 #1 #3 #4 th1p(t)    Ixx6 #1 #2 #4 th1p(t)    Ixx6 #3 #2 #4 th1p(t)    Ixx6 #3 #2 #4 th2p(t)    Iyy6 #1 #3 #2 th1p(t)    Iyy6 #1 #3 #4 th1p(t)
+   + l5  m6 cos(th4(t)) th2p(t) th5p(t) + lc5  m5 cos(th4(t)) th2p(t) th5p(t) - ---------------------- - ---------------------- - ---------------------- + ---------------------- - ---------------------- - ---------------------- + ----------------------
+                                                                                           2                        2                        2                        2                        2                        2                        2
+
+                          2                        2                        2                        2                        2
+     Iyy6 #1 #2 #4 th1p(t)    Iyy6 #3 #2 #4 th1p(t)    Iyy6 #3 #2 #4 th2p(t)    Izz5 #1 #3 #2 th1p(t)    Izz6 #1 #3 #2 th1p(t)                                                                                        2
+   + ---------------------- - ---------------------- + ---------------------- + ---------------------- + ---------------------- - Ixx6 cos(th2(t)) #2 #4 th1p(t) th4p(t) + Iyy6 cos(th2(t)) #2 #4 th1p(t) th4p(t) + l5  m6
+                2                        2                        2                        2                        2
+
+                                                2                                                                                2                                      2     2                                        2
+   sin(th2(t)) sin(th4(t)) th1p(t) th5p(t) + lc5  m5 sin(th2(t)) sin(th4(t)) th1p(t) th5p(t) - l5 m6 #1 sin(th5(t)) d3(t) th1p(t)  - lc5 m5 #1 sin(th5(t)) d3(t) th1p(t)  + l5  m6 cos(th2(t)) #2 th1p(t) th4p(t) + lc5  m5 cos(th2(t)) #2 th1p(t) th4p(t) - Ixx4
+
+   cos(th4(t)) sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) + Ixx6 cos(th4(t)) sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) - Ixx5 cos(th5(t)) sin(th4(t)) sin(th5(t)) th2p(t) th4p(t) - Ixx6 cos(th6(t)) sin(th5(t)) sin(th6(t)) th4p(t) th5p(t) + Iyy5
+
+   cos(th4(t)) sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) - Iyy6 cos(th5(t)) sin(th4(t)) sin(th5(t)) th2p(t) th4p(t) + Iyy6 cos(th6(t)) sin(th5(t)) sin(th6(t)) th4p(t) th5p(t) + Izz4 cos(th4(t)) sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) - Izz5
+
+   cos(th4(t)) sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) - Izz6 cos(th4(t)) sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) - Izz6 cos(th4(t)) sin(th2(t)) sin(th5(t)) th1p(t) th6p(t) + Izz5 cos(th5(t)) sin(th4(t)) sin(th5(t)) th2p(t) th4p(t) + Izz6
+
+                                                                                                 2                                            2
+   cos(th5(t)) sin(th4(t)) sin(th5(t)) th2p(t) th4p(t) - l2 l5 m6 cos(th4(t)) cos(th5(t)) th2p(t)  - l2 lc5 m5 cos(th4(t)) cos(th5(t)) th2p(t)  - l5 m6 cos(th4(t)) cos(th5(t)) d3p(t) th2p(t) - lc5 m5 cos(th4(t)) cos(th5(t)) d3p(t) th2p(t) - g l5 m6
+
+                                                                                                                2                           2
+                                                                                        Ixx6 #1 #3 #2 #4 th1p(t)    Iyy6 #1 #3 #2 #4 th1p(t)
+   cos(th4(t)) cos(th5(t)) sin(th2(t)) - g lc5 m5 cos(th4(t)) cos(th5(t)) sin(th2(t)) - ------------------------- + ------------------------- - l2 l5 m6 cos(th5(t)) th2p(t) th5p(t) - l2 lc5 m5 cos(th5(t)) th2p(t) th5p(t) - Ixx6 #4
+                                                                                                    2                           2
+
+                                                                                                 2                    2      2                    2
+                                                                                               l5  m6 #1 #3 #2 th1p(t)    lc5  m5 #1 #3 #2 th1p(t)                                   2                                   2
+   sin(th2(t)) sin(th4(t)) th1p(t) th5p(t) + Iyy6 #4 sin(th2(t)) sin(th4(t)) th1p(t) th5p(t) + ------------------------ + ------------------------- - l4 l5 m6 #1 sin(th5(t)) th1p(t)  - l4 lc5 m5 #1 sin(th5(t)) th1p(t)
+                                                                                                           2                          2
+
+   - l4 l5 m6 cos(th5(t)) sin(th4(t)) th2p(t) th4p(t) + l4 l5 m6 cos(th4(t)) sin(th5(t)) th2p(t) th5p(t) - l4 lc5 m5 cos(th5(t)) sin(th4(t)) th2p(t) th4p(t) + l4 lc5 m5 cos(th4(t)) sin(th5(t)) th2p(t) th5p(t) - Ixx5 cos(th4(t)) #2
+
+   sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) - Ixx6 cos(th4(t)) #4 sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) - Ixx6 cos(th5(t)) #4 sin(th4(t)) sin(th5(t)) th2p(t) th4p(t) - Iyy6 cos(th4(t)) #2 sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) + Iyy6 cos(th4(t)) #4
+
+   sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) + Iyy6 cos(th5(t)) #4 sin(th4(t)) sin(th5(t)) th2p(t) th4p(t) + Izz5 cos(th4(t)) #2 sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) + Izz6 cos(th4(t)) #2 sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) + l2 l5 m6 #1
+
+                                  2                                                2                                               2                                                 2     2
+   cos(th4(t)) cos(th5(t)) th1p(t)  + 2 l2 l5 m6 #1 cos(th4(t)) cos(th5(t)) th2p(t)  + l2 lc5 m5 #1 cos(th4(t)) cos(th5(t)) th1p(t)  + 2 l2 lc5 m5 #1 cos(th4(t)) cos(th5(t)) th2p(t)  - l5  m6 cos(th5(t)) sin(th4(t)) sin(th5(t)) th2p(t) th4p(t) + 2 l2 l5 m6 #1
+
+                                    2
+   cos(th5(t)) th2p(t) th5p(t) - lc5  m5 cos(th5(t)) sin(th4(t)) sin(th5(t)) th2p(t) th4p(t) + 2 l2 lc5 m5 #1 cos(th5(t)) th2p(t) th5p(t) - l5 m6 cos(th5(t)) sin(th4(t)) d3(t) th2p(t) th4p(t) + l5 m6 cos(th4(t)) sin(th5(t)) d3(t) th2p(t) th5p(t) - lc5 m5
+
+                                                                                                                                                                                  2                                                                           2
+   cos(th5(t)) sin(th4(t)) d3(t) th2p(t) th4p(t) + lc5 m5 cos(th4(t)) sin(th5(t)) d3(t) th2p(t) th5p(t) + Ixx5 cos(th2(t)) cos(th4(t)) cos(th5(t)) sin(th2(t)) sin(th5(t)) th1p(t)  - Ixx6 cos(th4(t)) cos(th5(t)) cos(th6(t)) sin(th4(t)) sin(th6(t)) th1p(t)
+
+                                                                             2                                                                           2                                                                           2
+   + Ixx6 cos(th4(t)) cos(th5(t)) cos(th6(t)) sin(th4(t)) sin(th6(t)) th2p(t)  + Iyy6 cos(th2(t)) cos(th4(t)) cos(th5(t)) sin(th2(t)) sin(th5(t)) th1p(t)  + Iyy6 cos(th4(t)) cos(th5(t)) cos(th6(t)) sin(th4(t)) sin(th6(t)) th1p(t)
+
+                                                                             2                                                                           2                                                                           2
+   - Iyy6 cos(th4(t)) cos(th5(t)) cos(th6(t)) sin(th4(t)) sin(th6(t)) th2p(t)  - Izz5 cos(th2(t)) cos(th4(t)) cos(th5(t)) sin(th2(t)) sin(th5(t)) th1p(t)  - Izz6 cos(th2(t)) cos(th4(t)) cos(th5(t)) sin(th2(t)) sin(th5(t)) th1p(t)
+
+   - Ixx5 cos(th2(t)) cos(th5(t)) sin(th4(t)) sin(th5(t)) th1p(t) th2p(t) + Ixx5 cos(th4(t)) cos(th5(t)) sin(th2(t)) sin(th5(t)) th1p(t) th4p(t) + Ixx6 cos(th5(t)) cos(th6(t)) sin(th2(t)) sin(th6(t)) th1p(t) th2p(t) - Ixx6
+
+   cos(th2(t)) cos(th6(t)) sin(th5(t)) sin(th6(t)) th1p(t) th5p(t) - Ixx6 cos(th4(t)) cos(th6(t)) sin(th5(t)) sin(th6(t)) th2p(t) th4p(t) + Ixx6 cos(th5(t)) cos(th6(t)) sin(th4(t)) sin(th6(t)) th2p(t) th5p(t) - Iyy6
+
+   cos(th2(t)) cos(th5(t)) sin(th4(t)) sin(th5(t)) th1p(t) th2p(t) + Iyy6 cos(th4(t)) cos(th5(t)) sin(th2(t)) sin(th5(t)) th1p(t) th4p(t) - Iyy6 cos(th5(t)) cos(th6(t)) sin(th2(t)) sin(th6(t)) th1p(t) th2p(t) + Iyy6
+
+   cos(th2(t)) cos(th6(t)) sin(th5(t)) sin(th6(t)) th1p(t) th5p(t) + Iyy6 cos(th4(t)) cos(th6(t)) sin(th5(t)) sin(th6(t)) th2p(t) th4p(t) - Iyy6 cos(th5(t)) cos(th6(t)) sin(th4(t)) sin(th6(t)) th2p(t) th5p(t) + Izz5
+
+   cos(th2(t)) cos(th5(t)) sin(th4(t)) sin(th5(t)) th1p(t) th2p(t) + Izz6 cos(th2(t)) cos(th5(t)) sin(th4(t)) sin(th5(t)) th1p(t) th2p(t) - Izz5 cos(th4(t)) cos(th5(t)) sin(th2(t)) sin(th5(t)) th1p(t) th4p(t) - Izz6
+
+                                                                                                                         2                                                         2                                                        2
+   cos(th4(t)) cos(th5(t)) sin(th2(t)) sin(th5(t)) th1p(t) th4p(t) + l2 l5 m6 cos(th2(t)) sin(th2(t)) sin(th5(t)) th1p(t)  + 2 l2 l5 m6 cos(th2(t)) sin(th2(t)) sin(th5(t)) th2p(t)  + l2 lc5 m5 cos(th2(t)) sin(th2(t)) sin(th5(t)) th1p(t)
+
+                                                            2
+   + 2 l2 lc5 m5 cos(th2(t)) sin(th2(t)) sin(th5(t)) th2p(t)  - l5 m6 cos(th5(t)) sin(th2(t)) sin(th4(t)) d3p(t) th1p(t) - lc5 m5 cos(th5(t)) sin(th2(t)) sin(th4(t)) d3p(t) th1p(t) - Ixx6
+
+   cos(th2(t)) cos(th4(t)) cos(th6(t)) sin(th5(t)) sin(th6(t)) th1p(t) th2p(t) - Ixx6 cos(th4(t)) cos(th5(t)) cos(th6(t)) sin(th2(t)) sin(th6(t)) th1p(t) th5p(t) + Iyy6 cos(th2(t)) cos(th4(t)) cos(th6(t)) sin(th5(t)) sin(th6(t)) th1p(t) th2p(t) + Iyy6
+
+                                                                                   2                                                                2
+   cos(th4(t)) cos(th5(t)) cos(th6(t)) sin(th2(t)) sin(th6(t)) th1p(t) th5p(t) + l5  m6 cos(th4(t)) #2 sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) + lc5  m5 cos(th4(t)) #2 sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) + l4 l5 m6
+
+                                                          2                                                                    2
+   cos(th2(t)) cos(th4(t)) cos(th5(t)) sin(th2(t)) th1p(t)  + l4 lc5 m5 cos(th2(t)) cos(th4(t)) cos(th5(t)) sin(th2(t)) th1p(t)  - Ixx6 cos(th6(t)) sin(th2(t)) sin(th4(t)) sin(th5(t)) sin(th6(t)) th1p(t) th4p(t) + Iyy6
+
+                                                                                                                                                            2                                                                              2
+   cos(th6(t)) sin(th2(t)) sin(th4(t)) sin(th5(t)) sin(th6(t)) th1p(t) th4p(t) + Ixx6 cos(th2(t)) cos(th4(t)) cos(th5(t)) #4 sin(th2(t)) sin(th5(t)) th1p(t)  + Ixx6 #1 cos(th4(t)) cos(th5(t)) cos(th6(t)) sin(th4(t)) sin(th6(t)) th1p(t)
+
+                                                                                2                                                                              2
+   - Iyy6 cos(th2(t)) cos(th4(t)) cos(th5(t)) #4 sin(th2(t)) sin(th5(t)) th1p(t)  - Iyy6 #1 cos(th4(t)) cos(th5(t)) cos(th6(t)) sin(th4(t)) sin(th6(t)) th1p(t)  + l2 l5 m6 cos(th2(t)) cos(th4(t)) cos(th5(t)) th1p(t) th4p(t) + l2 lc5 m5
+
+   cos(th2(t)) cos(th4(t)) cos(th5(t)) th1p(t) th4p(t) - l4 l5 m6 cos(th2(t)) cos(th5(t)) sin(th4(t)) th1p(t) th2p(t) + l4 l5 m6 cos(th4(t)) cos(th5(t)) sin(th2(t)) th1p(t) th4p(t) - l4 lc5 m5 cos(th2(t)) cos(th5(t)) sin(th4(t)) th1p(t) th2p(t) + l4 lc5 m5
+
+   cos(th4(t)) cos(th5(t)) sin(th2(t)) th1p(t) th4p(t) - Ixx6 cos(th2(t)) cos(th5(t)) #4 sin(th4(t)) sin(th5(t)) th1p(t) th2p(t) - 2 Ixx6 #3 cos(th5(t)) cos(th6(t)) sin(th2(t)) sin(th6(t)) th1p(t) th2p(t) + Ixx6 cos(th4(t)) cos(th5(t)) #4
+
+   sin(th2(t)) sin(th5(t)) th1p(t) th4p(t) + Iyy6 cos(th2(t)) cos(th5(t)) #4 sin(th4(t)) sin(th5(t)) th1p(t) th2p(t) + 2 Iyy6 #3 cos(th5(t)) cos(th6(t)) sin(th2(t)) sin(th6(t)) th1p(t) th2p(t) - Iyy6 cos(th4(t)) cos(th5(t)) #4
+
+   sin(th2(t)) sin(th5(t)) th1p(t) th4p(t) - l2 l5 m6 cos(th5(t)) sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) + l2 l5 m6 cos(th2(t)) sin(th4(t)) sin(th5(t)) th1p(t) th5p(t) - l2 lc5 m5 cos(th5(t)) sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) + l2 lc5 m5
+
+                                                           2                                                                       2      2                                                                       2
+   cos(th2(t)) sin(th4(t)) sin(th5(t)) th1p(t) th5p(t) + l5  m6 cos(th2(t)) cos(th4(t)) cos(th5(t)) sin(th2(t)) sin(th5(t)) th1p(t)  + lc5  m5 cos(th2(t)) cos(th4(t)) cos(th5(t)) sin(th2(t)) sin(th5(t)) th1p(t)
+
+                                                                                                                                                                                                       2
+   + l4 l5 m6 sin(th2(t)) sin(th4(t)) sin(th5(t)) th1p(t) th5p(t) + l4 lc5 m5 sin(th2(t)) sin(th4(t)) sin(th5(t)) th1p(t) th5p(t) + l5 m6 cos(th2(t)) cos(th4(t)) cos(th5(t)) sin(th2(t)) d3(t) th1p(t)
+
+                                                                         2     2                                                                        2                                                                         2
+   + lc5 m5 cos(th2(t)) cos(th4(t)) cos(th5(t)) sin(th2(t)) d3(t) th1p(t)  - l5  m6 cos(th2(t)) cos(th5(t)) sin(th4(t)) sin(th5(t)) th1p(t) th2p(t) + l5  m6 cos(th4(t)) cos(th5(t)) sin(th2(t)) sin(th5(t)) th1p(t) th4p(t) - lc5  m5
+
+                                                                        2
+   cos(th2(t)) cos(th5(t)) sin(th4(t)) sin(th5(t)) th1p(t) th2p(t) + lc5  m5 cos(th4(t)) cos(th5(t)) sin(th2(t)) sin(th5(t)) th1p(t) th4p(t) - Ixx6 cos(th4(t)) #2 #4 sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) + Iyy6 cos(th4(t)) #2 #4
+
+   sin(th2(t)) sin(th4(t)) th1p(t) th2p(t) - l5 m6 cos(th2(t)) cos(th5(t)) sin(th4(t)) d3(t) th1p(t) th2p(t) + l5 m6 cos(th4(t)) cos(th5(t)) sin(th2(t)) d3(t) th1p(t) th4p(t) - lc5 m5 cos(th2(t)) cos(th5(t)) sin(th4(t)) d3(t) th1p(t) th2p(t) + lc5 m5
+
+   cos(th4(t)) cos(th5(t)) sin(th2(t)) d3(t) th1p(t) th4p(t) + l5 m6 sin(th2(t)) sin(th4(t)) sin(th5(t)) d3(t) th1p(t) th5p(t) + lc5 m5 sin(th2(t)) sin(th4(t)) sin(th5(t)) d3(t) th1p(t) th5p(t) - Ixx6
+
+                                                                                  2                                                                                       2
+   cos(th2(t)) cos(th6(t)) sin(th2(t)) sin(th4(t)) sin(th5(t)) sin(th6(t)) th1p(t)  + Iyy6 cos(th2(t)) cos(th6(t)) sin(th2(t)) sin(th4(t)) sin(th5(t)) sin(th6(t)) th1p(t)  - 2 l2 l5 m6 cos(th2(t)) cos(th5(t)) sin(th2(t)) sin(th4(t)) th2p(t) th4p(t) + 2 l2 l5 m6
+
+   cos(th2(t)) cos(th4(t)) sin(th2(t)) sin(th5(t)) th2p(t) th5p(t) - 2 l2 lc5 m5 cos(th2(t)) cos(th5(t)) sin(th2(t)) sin(th4(t)) th2p(t) th4p(t) + 2 l2 lc5 m5 cos(th2(t)) cos(th4(t)) sin(th2(t)) sin(th5(t)) th2p(t) th5p(t)
+
+where
+
+                    2
+   #1 == cos(th2(t))
+
+                    2
+   #2 == cos(th5(t))
+
+                    2
+   #3 == cos(th4(t))
+
+                    2
+   #4 == cos(th6(t))
+
+   #5 == sin(2 th2(t))
+
+
+diary off
